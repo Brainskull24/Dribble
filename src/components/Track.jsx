@@ -45,6 +45,7 @@ const Track = () => {
         <Image
           ref={ppRef}
           src={ahead8}
+          alt = "ahead8"
           width={60}
           height={40}
           style={{ transform: `rotate(${15}deg)` }}

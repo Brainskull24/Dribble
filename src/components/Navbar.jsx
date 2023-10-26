@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between px-24 items-center w-full h-20 font-sans fixed bg-white">
       <div className="flex w-1/10">
-        <Image src={logo} width={50} height={50} className="rounded-xl" />
+        <Image src={logo} alt = "logo" width={50} height={50} className="rounded-xl" />
       </div>
       <div className="flex w-7/10 font-semibold gap-8">
         <Link href="/" className="">

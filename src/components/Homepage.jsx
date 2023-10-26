@@ -23,6 +23,7 @@ export default function Homepage() {
         <div className="flex gap-5 items-center ">
           <Image
             src={appstore}
+            alt = "appstore"
             width={120}
             height={100}
             className="rounded-lg mt-5 items-center"
@@ -33,6 +34,7 @@ export default function Homepage() {
       <div className="flex w-2/5">
         <Image
           src={home}
+          alt = "home"
           width={500}
           height={300}
           className="rounded-xl"

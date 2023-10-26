@@ -113,6 +113,7 @@ const CardSection = () => {
         <Image
         ref={ppRef}
         src = {ahead3}
+        alt = "ahead3"
         width = {50}
         style={{transform: `rotate(${345}deg)`}}
         data-aos="fade-right"
