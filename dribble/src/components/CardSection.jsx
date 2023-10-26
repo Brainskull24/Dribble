@@ -58,7 +58,7 @@ const CardSection = () => {
         scrollTrigger: {
           trigger: element,
           start: "top 50%",
-          markers: true,
+          // markers: true,
         },
       });
 
@@ -69,7 +69,7 @@ const CardSection = () => {
         scrollTrigger: {
           trigger: element,
           start: "top 50%",
-          markers: true,
+          // markers: true,
         },
       });
     }
