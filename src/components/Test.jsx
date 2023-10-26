@@ -36,8 +36,8 @@ const Test = () => {
       </span>
       <h1 className="text-3xl font-bold">Before you get started</h1>
       <p className="text-xl text-center">
-        "We won't share your answers with anyone (and won't ever tell you which
-        friends said what about you)"
+        We wont share your answers with anyone (and wont ever tell you which
+        friends said what about you)
       </p>
       <div>
         <span className="font-semibold">with love, </span>

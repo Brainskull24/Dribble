@@ -36,7 +36,7 @@ const Track = () => {
       <div className="flex w-full py-3 px-[8%] gap-10">
         <div>
           <p data-aos="fade-left">
-            Wrong with self-improvement & how we're fixing it.
+            Wrong with self-improvement & how we are fixing it.
           </p>
           <p className="text-4xl font-bold pt-3" data-aos="fade-left">
             Self-improvement. Ugh.
