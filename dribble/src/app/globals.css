@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +25,79 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none;
+}
+.word-space-5 {
+	word-spacing: 5px;
+}
+.aqoyss::after {
+	--tw-content: "Answer questions on your social skills.";
+}
+.fowyaost::after {
+	--tw-content: "Find out where you and others see things the same way - and where not!";
+}
+.loaats::after {
+	--tw-content: "Let others anonymously answer the same questions about you.";
+}
+.Anonymonus1::after {
+	--tw-content: "Anonymonus 1";
+}
+.Anonymonus2::after {
+	--tw-content: "Anonymonus 2";
+}
+.Anonymonus3::after {
+	--tw-content: "Anonymonus 3";
+}
+
+/* Hide the scrollbar for webkit-based browsers */
+div::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+/* div::-webkit-scrollbar-track {
+  background: transparent;
+} */
+
+/* div::-webkit-scrollbar-thumb {
+  background-color: transparent;
+} */
+
+.list > * {
+  color: gray;
+}
+
+/* .list-container::-webkit-scrollbar {
+  display: none;
+} */
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 7px;
+  padding: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  background: rgb(184, 178, 178);
+}
+
+/* Handle */
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #805ad5;
+  height: 20px;
+  border-radius: 10px;
+  max-height: 20px;
+  margin-top: 40%;
+  margin-bottom: 40%;
 }
