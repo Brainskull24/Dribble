@@ -2,12 +2,42 @@
 import Image from "next/image";
 import ahead7 from "../images/ahead7.png";
 import { motion } from "framer-motion";
+import React from "react";
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+gsap.registerPlugin(ScrollTrigger);
 export default function Homepage() {
+  const elementRef = useRef(null);
+  useEffect(() => {
+    AOS.init();
+    gsap.to(elementRef.current, {
+      x: 50,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: elementRef.current,
+        start: 'top 80%',
+        end: 'bottom 80%',
+        scrub: true,
+        // markers: true,
+      },
+      ease: 'power2.out',
+    });
+  }, []);
   return (
     <div className="flex bg-[#fdf8f0] mx-10 rounded-2xl p-5 justify-center h-116 my-12">
       <div className="flex w-1/2 flex-col p-5 gap-4 justify-center">
-        <span className="font-semibold">Built out of frustration</span>
-        <h1 className="font-bold text-4xl">Meet the ahead app</h1>
+        <span 
+        className="font-semibold"
+        >Built out of frustration</span>
+        <h1 
+        className="font-bold text-4xl"
+        ref={elementRef}
+        data-aos="zoom-out-right"
+        style={{ x: -100, opacity: 0 }}
+        >Meet the ahead app</h1>
         <div className="flex items-center justify-center w-72 h-56">
             <motion.div
               initial={{ y: 100, opacity: 0 }}
